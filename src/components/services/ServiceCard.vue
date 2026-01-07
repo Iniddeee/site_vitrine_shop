@@ -27,7 +27,7 @@ const formatPrice = (price: number | 'Sur devis') => {
     class="card group hover:shadow-xl transition-all duration-300 relative overflow-hidden flex flex-col h-full"
   >
     <!-- Badge -->
-    <div v-if="service.badge" class="absolute top-6 right-6 z-10">
+    <div v-if="service.badge" class="absolute top-8 right-6 z-10">
       <span
         class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium"
         :class="{
@@ -46,15 +46,16 @@ const formatPrice = (price: number | 'Sur devis') => {
     </div>
 
     <!-- Content -->
-    <div class="flex flex-col h-full p-6 pt-10">
-      <!-- Meta info -->
-      <div class="flex items-center gap-3 text-sm text-gray-500 dark:text-gray-400 mb-3">
-        <div class="flex items-center gap-1">
-          <Tag class="h-4 w-4" />
-          <span>{{ service.category }}</span>
+    <div class="flex flex-col h-full p-6">
+      <!-- Meta info with badge -->
+      <div class="flex items-start justify-between mb-3">
+        <div class="flex items-center gap-3 text-sm text-gray-500 dark:text-gray-400">
+          <div class="flex items-center gap-1">
+            <Tag class="h-4 w-4" />
+            <span>{{ service.category }}</span>
+          </div>
         </div>
-        <span class="text-gray-300 dark:text-gray-600">•</span>
-        <div class="flex items-center gap-1">
+        <div class="flex items-center gap-1 text-sm text-gray-500 dark:text-gray-400">
           <Clock class="h-4 w-4" />
           <span>{{ service.duration }}</span>
         </div>
