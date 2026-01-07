@@ -104,5 +104,3 @@ npm run format
 Le projet utilise Vue 3 avec TypeScript et le pattern Composition API. Les styles sont gérés avec Tailwind CSS et le state management avec Pinia.
 
 ---
-
-Créé avec ❤️ pour votre entreprise
