@@ -59,7 +59,7 @@ const contactInfo = {
   address: {
     icon: MapPin,
     title: 'Adresse',
-    details: ['Shop', 'Faubourg St Germain 2', '2900 Porrentruy'],
+    details: ['Shop', 'Esplanade', '2900 Porrentruy'],
   },
   phone: {
     icon: Phone,
@@ -297,7 +297,7 @@ const contactInfo = {
         </h2>
         <div class="rounded-lg overflow-hidden shadow-lg">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2696.7!2d7.0753!3d47.4155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDI0JzU1LjgiTiA3wrAwNCczMS4xIkU!5e0!3m2!1sfr!2sch!4v1704659000"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2696.7!2d7.0995!3d47.4255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1sEsplanade%2C%202900%20Porrentruy!5e0!3m2!1sfr!2sch!4v1704659000"
             width="100%"
             height="400"
             style="border: 0"
