@@ -1,0 +1,147 @@
+[
+  {
+    "id": 1,
+    "title": "Réparation Écran iPhone",
+    "slug": "reparation-ecran-iphone",
+    "category": "Réparation",
+    "duration": "30-45 min",
+    "price": 129,
+    "badge": "Populaire",
+    "isShoppable": false,
+    "description": "Remplacement professionnel d'écran pour tous les modèles d'iPhone avec pièces d'origine.",
+    "longDescription": "Notre service de remplacement d'écran iPhone utilise uniquement des pièces de haute qualité compatibles avec les normes Apple. Nos techniciens certifiés interviennent rapidement pour restaurer la fonctionnalité tactile et l'affichage de votre iPhone.",
+    "features": [
+      "Pièces de haute qualité",
+      "Intervention sur place",
+      "Calibration couleur professionnelle",
+      "Test d'étanchéité"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Changement Batterie Samsung",
+    "slug": "changement-batterie-samsung",
+    "category": "Réparation",
+    "duration": "20-30 min",
+    "price": 89,
+    "badge": "Promo",
+    "isShoppable": false,
+    "description": "Restaurez l'autonomie de votre Samsung avec une batterie neuve et certifiée.",
+    "longDescription": "Les batteries Samsung perdent de leur capacité avec le temps. Nous remplaçons votre batterie par une neuve, vous offrant jusqu'à 100% de capacité d'origine. Service rapide while-you-wait dans notre atelier de Genève.",
+    "features": [
+      "Batterie certifiée CE",
+      "Jusqu'à 100% de capacité",
+      "Diagnostic gratuit",
+      "Économisez 40% vs prix Apple"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Réparation Port de Chargement",
+    "slug": "reparation-port-chargement",
+    "category": "Réparation",
+    "duration": "45-60 min",
+    "price": 79,
+    "isShoppable": false,
+    "description": "Problèmes de chargement ? Nous réparons ou remplaçons votre port de chargement défectueux.",
+    "longDescription": "Un port de chargement défectueux peut empêcher votre téléphone de se charger correctement. Nos techniciens diagnostiquent et réparent ou remplacent le port de chargement pour tous les modèles de smartphones.",
+    "features": [
+      "Diagnostic complet inclus",
+      "Pièces d'origine ou équivalent",
+      "Test de charge intensif",
+      "Nettoyage interne inclus"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Dépannage Informatique",
+    "slug": "depannage-informatique",
+    "category": "Support",
+    "duration": "1-2 heures",
+    "price": 95,
+    "isShoppable": false,
+    "description": "Support technique pour tous vos problèmes informatiques à domicile ou à distance.",
+    "longDescription": "Notre équipe de techniciens vous accompagne pour résoudre tous vos problèmes informatiques : virus, lenteur, sauvegarde, installation de logiciels. Intervention dans tout le canton de Genève.",
+    "features": [
+      "Intervention à domicile",
+      "Support à distance disponible",
+      "Formation personnalisée",
+      "Optimisation performance",
+      "Conseils sécurité"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Récupération de Données",
+    "slug": "recuperation-donnees",
+    "category": "Service",
+    "duration": "1-3 jours",
+    "price": "Sur devis",
+    "badge": "Premium",
+    "isShoppable": false,
+    "description": "Perdu vos données ? Nous récupérons vos photos, contacts et documents importants.",
+    "longDescription": "Grâce à nos outils professionnels de récupération de données, nous pouvons restaurer vos fichiers perdus suite à une panne, une suppression accidentelle ou un dommage physique. Devis gratuit.",
+    "features": [
+      "Analyse gratuite",
+      "Taux de réussite 95%",
+      "Confidentialité protégée",
+      "Support tous appareils",
+      "Paiement uniquement si succès"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Vente Accessoires",
+    "slug": "vente-accessoires",
+    "category": "Boutique",
+    "duration": "Immédiat",
+    "price": 15,
+    "isShoppable": false,
+    "description": "Large choix d'accessoires smartphones : coques, protections écran, chargeurs.",
+    "longDescription": "Découvrez notre sélection d'accessoires de qualité pour protéger et personnaliser votre smartphone. Coques premium, verres trempés, chargeurs rapides et bien plus encore disponibles en stock.",
+    "features": [
+      "Produits en stock",
+      "Marques reconnues",
+      "Installation gratuite",
+      "Conseils personnalisés",
+      "Compatibilité vérifiée"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Forfait Entreprise",
+    "slug": "forfait-entreprise",
+    "category": "Service Pro",
+    "duration": "Sur mesure",
+    "price": "Sur devis",
+    "badge": "Nouveau",
+    "isShoppable": false,
+    "description": "Solutions de maintenance pour entreprises et professionnels de Suisse romande.",
+    "longDescription": "Nous proposons des contrats de maintenance sur mesure pour les entreprises, avec interventions prioritaires, tarifs préférentiels et gestion complète du parc téléphonique de vos employés.",
+    "features": [
+      "Intervention prioritaire 24h",
+      "Tarifs dégressifs",
+      "Gestion parc matériel",
+      "Reporting mensuel",
+      "Support dédié"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Formation Smartphone",
+    "slug": "formation-smartphone",
+    "category": "Formation",
+    "duration": "2 heures",
+    "price": 120,
+    "isShoppable": false,
+    "description": "Apprenez à maîtriser votre smartphone : photos, applications, sécurité et plus.",
+    "longDescription": "Nos formations personnalisées vous aident à tirer le meilleur parti de votre smartphone. Apprenez à prendre de meilleures photos, organiser vos fichiers, protéger votre vie privée et utiliser les applications essentielles.",
+    "features": [
+      "Formation individuelle",
+      "Adaptée à votre niveau",
+      "Support fourni",
+      "Questions illimitées",
+      "Suivi téléphonique"
+    ]
+  }
+]
