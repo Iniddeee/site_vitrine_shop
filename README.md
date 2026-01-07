@@ -1,8 +1,8 @@
-# FixPhone Porrentruy 📱
+# Shop Porrentruy 
 
 Site web vitrine pour FixPhone, votre réparateur de smartphones de confiance à Porrentruy !
 
-## 🚀 Pour démarrer
+##  Pour démarrer
 
 Prérequis : Node.js 20+ (j'utilise la 20.19.0)
 
@@ -104,5 +104,3 @@ npm run format
 Le projet utilise Vue 3 avec TypeScript et le pattern Composition API. Les styles sont gérés avec Tailwind CSS et le state management avec Pinia.
 
 ---
-
-Créé avec ❤️ pour votre entreprise
