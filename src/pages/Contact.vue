@@ -59,7 +59,7 @@ const contactInfo = {
   address: {
     icon: MapPin,
     title: 'Adresse',
-    details: ['Shop', 'Esplanade Centre, Faubourg Saint-Germain 2', '2900 Pruntrut', 'Suisse'],
+    details: ['Shop', 'Faubourg Saint-Germain 2', '2900 Porrentruy', 'Suisse'],
   },
   phone: {
     icon: Phone,
@@ -297,7 +297,7 @@ const contactInfo = {
         </h2>
         <div class="rounded-lg overflow-hidden shadow-lg">
           <iframe
-            src="https://www.openstreetmap.org/export/embed.html?bbox=7.098%2C47.423%2C7.108%2C47.433&layer=mapnik&marker=47.428%2C7.103"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=7.099%2C47.424%2C7.109%2C47.434&layer=mapnik&marker=47.429%2C7.104"
             width="100%"
             height="400"
             style="border: 0"
