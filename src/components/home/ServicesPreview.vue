@@ -14,7 +14,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="py-16 md:py-24 bg-gray-50 dark:bg-gray-900">
+  <section class="py-20 md:py-32 bg-gray-50 dark:bg-gray-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12" data-aos="fade-up">
         <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white">
@@ -36,10 +36,7 @@ onMounted(() => {
       </div>
 
       <div class="text-center" data-aos="fade-up" data-aos-delay="400">
-        <RouterLink
-          to="/services"
-          class="btn-primary inline-flex items-center px-8 py-3"
-        >
+        <RouterLink to="/services" class="btn-primary inline-flex items-center px-8 py-3">
           Voir tous les services
         </RouterLink>
       </div>
