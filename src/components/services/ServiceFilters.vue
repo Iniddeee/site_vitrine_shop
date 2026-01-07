@@ -17,19 +17,19 @@ const sortBy = ref('popular')
 
 const categoriesWithAll = computed(() => [
   { value: 'all', label: 'Toutes les catégories' },
-  ...props.categories.map(cat => ({ value: cat, label: cat }))
+  ...props.categories.map((cat) => ({ value: cat, label: cat })),
 ])
 
 const sortOptions = [
   { value: 'popular', label: 'Populaire' },
   { value: 'price-low', label: 'Prix croissant' },
-  { value: 'price-high', label: 'Prix décroissant' }
+  { value: 'price-high', label: 'Prix décroissant' },
 ]
 
 watch([selectedCategory, sortBy], () => {
   emit('filter', {
     category: selectedCategory.value,
-    sortBy: sortBy.value
+    sortBy: sortBy.value,
   })
 })
 
@@ -40,7 +40,9 @@ const clearFilters = () => {
 </script>
 
 <template>
-  <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 mb-8">
+  <div
+    class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-600 mb-8"
+  >
     <div class="flex items-center justify-between mb-4">
       <h3 class="text-lg font-semibold text-gray-900 dark:text-white flex items-center">
         <Filter class="h-5 w-5 mr-2" />
@@ -64,7 +66,7 @@ const clearFilters = () => {
         </label>
         <select
           v-model="selectedCategory"
-          class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+          class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-600 dark:border-gray-500 dark:text-white"
         >
           <option
             v-for="category in categoriesWithAll"
@@ -83,13 +85,9 @@ const clearFilters = () => {
         </label>
         <select
           v-model="sortBy"
-          class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+          class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-600 dark:border-gray-500 dark:text-white"
         >
-          <option
-            v-for="option in sortOptions"
-            :key="option.value"
-            :value="option.value"
-          >
+          <option v-for="option in sortOptions" :key="option.value" :value="option.value">
             {{ option.label }}
           </option>
         </select>
