@@ -184,18 +184,6 @@ const formatPrice = (price: number | 'Sur devis') => {
             Pas de frais cachés, prix fixe garanti
           </p>
         </div>
-
-        <div class="text-center">
-          <div
-            class="bg-primary-100 dark:bg-primary-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-          >
-            <Wrench class="h-8 w-8 text-primary-600 dark:text-primary-400" />
-          </div>
-          <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Garantie 3 mois</h3>
-          <p class="text-gray-600 dark:text-gray-400 text-sm">
-            Toutes nos réparations sont garanties
-          </p>
-        </div>
       </div>
     </div>
   </div>
