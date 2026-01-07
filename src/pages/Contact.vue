@@ -297,7 +297,7 @@ const contactInfo = {
         </h2>
         <div class="rounded-lg overflow-hidden shadow-lg">
           <iframe
-            src="https://www.openstreetmap.org/export/embed.html?bbox=7.099%2C47.424%2C7.109%2C47.434&layer=mapnik&marker=47.429%2C7.104"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=7.077%2C47.418%2C7.117%2C47.438&layer=mapnik&marker=47.428%2C7.097"
             width="100%"
             height="400"
             style="border: 0"
