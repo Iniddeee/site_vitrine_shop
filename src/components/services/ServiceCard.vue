@@ -27,7 +27,7 @@ const formatPrice = (price: number | 'Sur devis') => {
     class="card group hover:shadow-xl transition-all duration-300 relative overflow-hidden flex flex-col h-full"
   >
     <!-- Badge -->
-    <div v-if="service.badge" class="absolute top-4 right-4 z-10">
+    <div v-if="service.badge" class="absolute top-6 right-6 z-10">
       <span
         class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium"
         :class="{
@@ -46,7 +46,7 @@ const formatPrice = (price: number | 'Sur devis') => {
     </div>
 
     <!-- Content -->
-    <div class="flex flex-col h-full p-6 pt-12">
+    <div class="flex flex-col h-full p-6 pt-10">
       <!-- Meta info -->
       <div class="flex items-center gap-3 text-sm text-gray-500 dark:text-gray-400 mb-3">
         <div class="flex items-center gap-1">
