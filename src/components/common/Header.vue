@@ -4,6 +4,7 @@ import { ref, computed } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 import { ShoppingCart, Moon, Sun, Menu, X, Wrench } from 'lucide-vue-next'
 import { useCartStore } from '@/stores/cart'
+import { useDarkMode } from '@/composables/useDarkMode'
 
 defineOptions({
   name: 'TheHeader',
@@ -11,8 +12,8 @@ defineOptions({
 
 const route = useRoute()
 const cartStore = useCartStore()
+const { isDark: isDarkMode, toggleDark: toggleDarkMode } = useDarkMode()
 
-const isDarkMode = ref(false)
 const isMobileMenuOpen = ref(false)
 
 const navigation = [
@@ -24,11 +25,6 @@ const navigation = [
 ]
 
 const cartCount = computed(() => cartStore.count)
-
-const toggleDarkMode = () => {
-  isDarkMode.value = !isDarkMode.value
-  document.documentElement.classList.toggle('dark')
-}
 
 const toggleMobileMenu = () => {
   isMobileMenuOpen.value = !isMobileMenuOpen.value

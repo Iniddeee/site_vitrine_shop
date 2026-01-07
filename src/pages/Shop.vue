@@ -48,7 +48,7 @@ const formatPrice = (price: number | 'Sur devis') => {
               Type d'appareil
             </label>
             <select
-              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700 dark:border-gray-600"
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700 dark:border-gray-600 dark:text-white"
             >
               <option>iPhone</option>
               <option>Samsung</option>
@@ -62,7 +62,7 @@ const formatPrice = (price: number | 'Sur devis') => {
               Type de réparation
             </label>
             <select
-              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700 dark:border-gray-600"
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700 dark:border-gray-600 dark:text-white"
             >
               <option>Écran cassé</option>
               <option>Batterie défectueuse</option>
@@ -78,7 +78,7 @@ const formatPrice = (price: number | 'Sur devis') => {
           </label>
           <textarea
             rows="4"
-            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700 dark:border-gray-600"
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700 dark:border-gray-600 dark:text-white"
             placeholder="Décrivez le problème que vous rencontrez..."
           ></textarea>
         </div>
@@ -90,7 +90,7 @@ const formatPrice = (price: number | 'Sur devis') => {
             </label>
             <input
               type="text"
-              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700 dark:border-gray-600"
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700 dark:border-gray-600 dark:text-white"
               placeholder="Jean Dupont"
             />
           </div>
@@ -101,7 +101,7 @@ const formatPrice = (price: number | 'Sur devis') => {
             </label>
             <input
               type="tel"
-              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700 dark:border-gray-600"
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700 dark:border-gray-600 dark:text-white"
               placeholder="079 123 45 67"
             />
           </div>
@@ -113,7 +113,7 @@ const formatPrice = (price: number | 'Sur devis') => {
           </label>
           <input
             type="email"
-            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700 dark:border-gray-600"
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-700 dark:border-gray-600 dark:text-white"
             placeholder="jean.dupont@email.ch"
           />
         </div>

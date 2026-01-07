@@ -23,7 +23,9 @@ const formatPrice = (price: number | 'Sur devis') => {
 </script>
 
 <template>
-  <div class="card group hover:shadow-lg transition-all duration-300 relative overflow-hidden">
+  <div
+    class="card group hover:shadow-lg transition-all duration-300 relative overflow-hidden flex flex-col h-full"
+  >
     <!-- Badge -->
     <div v-if="service.badge" class="absolute top-4 right-4 z-10">
       <span
@@ -63,7 +65,7 @@ const formatPrice = (price: number | 'Sur devis') => {
         {{ service.description }}
       </p>
 
-      <div class="flex items-center justify-between">
+      <div class="flex items-center justify-between mt-auto">
         <span class="text-2xl font-bold text-primary-600 dark:text-primary-400">
           {{ formatPrice(service.price) }}
         </span>
