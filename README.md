@@ -1,8 +1,8 @@
-# FixPhone Porrentruy 📱
+# Shop Porrentruy 
 
 Site web vitrine pour FixPhone, votre réparateur de smartphones de confiance à Porrentruy !
 
-## 🚀 Pour démarrer
+##  Pour démarrer
 
 Prérequis : Node.js 20+ (j'utilise la 20.19.0)
 
