@@ -59,7 +59,7 @@ const contactInfo = {
   address: {
     icon: MapPin,
     title: 'Adresse',
-    details: ['Shop', 'Faubourg Saint-Germain 2', '2900 Porrentruy', 'Suisse'],
+    details: ['Shop', 'Faubourg St Germain 2', '2900 Porrentruy'],
   },
   phone: {
     icon: Phone,
