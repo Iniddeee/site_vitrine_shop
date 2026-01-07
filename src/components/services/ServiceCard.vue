@@ -23,72 +23,74 @@ const formatPrice = (price: number | 'Sur devis') => {
 </script>
 
 <template>
-  <div
-    class="card group hover:shadow-xl transition-all duration-300 relative overflow-hidden flex flex-col h-full"
-  >
+  <div class="group relative">
     <!-- Badge -->
-    <div v-if="service.badge" class="absolute top-8 right-6 z-10">
+    <div v-if="service.badge" class="absolute -top-2 -right-2 z-10">
       <span
-        class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium"
+        class="inline-flex items-center px-3 py-1.5 rounded-full text-xs font-semibold shadow-lg"
         :class="{
-          'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200':
-            service.badge === 'Populaire',
-          'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200':
-            service.badge === 'Nouveau',
-          'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200':
-            service.badge === 'Premium',
-          'bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200':
-            service.badge === 'Promo',
+          'bg-red-500 text-white': service.badge === 'Populaire',
+          'bg-green-500 text-white': service.badge === 'Nouveau',
+          'bg-purple-500 text-white': service.badge === 'Premium',
+          'bg-orange-500 text-white': service.badge === 'Promo',
         }"
       >
         {{ service.badge }}
       </span>
     </div>
 
-    <!-- Content -->
-    <div class="flex flex-col h-full p-6">
-      <!-- Meta info with badge -->
-      <div class="flex items-start justify-between mb-3">
-        <div class="flex items-center gap-3 text-sm text-gray-500 dark:text-gray-400">
-          <div class="flex items-center gap-1">
-            <Tag class="h-4 w-4" />
-            <span>{{ service.category }}</span>
-          </div>
+    <!-- Card -->
+    <div
+      class="card group-hover:shadow-2xl group-hover:scale-[1.02] transition-all duration-300 h-full flex flex-col"
+    >
+      <!-- Header -->
+      <div
+        class="flex items-center justify-between mb-4 pb-4 border-b border-gray-200 dark:border-gray-600"
+      >
+        <div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
+          <Tag class="h-4 w-4" />
+          <span class="font-medium">{{ service.category }}</span>
         </div>
-        <div class="flex items-center gap-1 text-sm text-gray-500 dark:text-gray-400">
+        <div
+          class="flex items-center gap-1.5 text-sm text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-600 px-3 py-1.5 rounded-full"
+        >
           <Clock class="h-4 w-4" />
-          <span>{{ service.duration }}</span>
+          <span class="font-medium">{{ service.duration }}</span>
         </div>
       </div>
 
       <!-- Title -->
       <h3
-        class="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors min-h-[3.5rem]"
+        class="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors leading-tight min-h-[3.5rem]"
       >
         {{ service.title }}
       </h3>
 
       <!-- Description -->
-      <p class="text-gray-600 dark:text-gray-300 mb-6 line-clamp-2 flex-grow">
+      <p class="text-gray-600 dark:text-gray-300 mb-6 line-clamp-2 flex-grow leading-relaxed">
         {{ service.description }}
       </p>
 
-      <!-- Price and CTA -->
-      <div
-        class="flex items-center justify-between mt-auto pt-4 border-t border-gray-200 dark:border-gray-600"
-      >
-        <div class="flex flex-col">
-          <span class="text-sm text-gray-500 dark:text-gray-400 mb-1">Prix</span>
-          <span class="text-2xl font-bold text-primary-600 dark:text-primary-400">
-            {{ formatPrice(service.price) }}
-          </span>
+      <!-- Footer -->
+      <div class="mt-auto pt-6 border-t border-gray-200 dark:border-gray-600">
+        <div class="flex items-center justify-between">
+          <div>
+            <p
+              class="text-xs text-gray-500 dark:text-gray-400 mb-1 font-medium uppercase tracking-wide"
+            >
+              Prix
+            </p>
+            <p class="text-3xl font-bold text-primary-600 dark:text-primary-400">
+              {{ formatPrice(service.price) }}
+            </p>
+          </div>
+          <RouterLink
+            :to="`/services/${service.slug}`"
+            class="btn-primary px-6 py-3 text-sm font-semibold whitespace-nowrap shadow-lg hover:shadow-xl transition-shadow"
+          >
+            Voir plus
+          </RouterLink>
         </div>
-        <RouterLink
-          :to="`/services/${service.slug}`"
-          class="btn-primary px-6 py-3 text-sm whitespace-nowrap"
-        >
-          Voir plus
-        </RouterLink>
       </div>
     </div>
   </div>
