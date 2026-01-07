@@ -46,7 +46,7 @@ const formatPrice = (price: number | 'Sur devis') => {
     </div>
 
     <!-- Content -->
-    <div class="flex flex-col h-full">
+    <div class="flex flex-col h-full p-6 pt-12">
       <!-- Meta info -->
       <div class="flex items-center gap-3 text-sm text-gray-500 dark:text-gray-400 mb-3">
         <div class="flex items-center gap-1">
