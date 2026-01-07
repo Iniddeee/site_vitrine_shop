@@ -9,7 +9,7 @@ import ToastContainer from '@/components/ui/ToastContainer.vue'
 </script>
 
 <template>
-  <div class="min-h-screen flex flex-col bg-white dark:bg-gray-900">
+  <div class="min-h-screen flex flex-col bg-white dark:bg-gray-900 overflow-x-hidden">
     <TheHeader />
     <main class="flex-1">
       <RouterView />

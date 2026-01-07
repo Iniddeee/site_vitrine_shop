@@ -11,7 +11,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div>
+  <div class="overflow-x-hidden">
     <HeroSection />
     <section data-aos="fade-up">
       <ServicesPreview />
