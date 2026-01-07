@@ -84,12 +84,12 @@ const handleFilter = (newFilters: { category: string; sortBy: string }) => {
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Hero Section -->
       <section
-        class="bg-gradient-to-br from-primary-50 to-white dark:from-gray-900 dark:to-gray-800 py-16"
+        class="bg-gradient-to-br from-primary-50 to-white dark:from-gray-900 dark:to-gray-800 py-20 mb-16 rounded-2xl"
       >
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center">
-            <h1 class="text-4xl font-bold text-gray-900 dark:text-white">Nos Services</h1>
-            <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-600 dark:text-gray-400">
+            <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">Nos Services</h1>
+            <p class="max-w-2xl mx-auto text-xl text-gray-600 dark:text-gray-400">
               Réparation professionnelle de smartphones et appareils électroniques à Porrentruy.
               Service rapide et de qualité.
             </p>
@@ -98,7 +98,7 @@ const handleFilter = (newFilters: { category: string; sortBy: string }) => {
       </section>
 
       <!-- Header -->
-      <div class="text-center mb-12">
+      <div class="text-center mb-16 mt-12">
         <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Toutes Nos Prestations</h2>
         <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">
           Explorez notre gamme complète de services de réparation pour smartphones et appareils
