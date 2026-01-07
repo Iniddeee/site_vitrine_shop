@@ -160,7 +160,7 @@ const formatPrice = (price: number | 'Sur devis') => {
       </div>
 
       <!-- Why Choose Us -->
-      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
         <div class="text-center">
           <div
             class="bg-primary-100 dark:bg-primary-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
