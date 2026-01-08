@@ -27,19 +27,12 @@ const submitForm = async () => {
   isSubmitting.value = true
 
   try {
-    const response = await fetch('http://localhost:3001/api/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData.value),
-    })
+    // TODO: Configurer avec le service choisi pour Infomaniak
+    // Options: EmailJS, Formspree, ou backend PHP
+    console.log('Message à envoyer:', formData.value)
 
-    const data = await response.json()
-
-    if (!response.ok) {
-      throw new Error(data.error || 'Erreur lors de l\'envoi')
-    }
+    // Simulation d'envoi
+    await new Promise(resolve => setTimeout(resolve, 1000))
 
     toast.success('Message envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.')
 
@@ -56,7 +49,8 @@ const submitForm = async () => {
 
   } catch (error) {
     console.error('Erreur:', error)
-    toast.error(error.message || 'Une erreur est survenue, veuillez réessayer')
+    const errorMessage = error instanceof Error ? error.message : 'Une erreur est survenue, veuillez réessayer'
+    toast.error(errorMessage)
   } finally {
     isSubmitting.value = false
   }
