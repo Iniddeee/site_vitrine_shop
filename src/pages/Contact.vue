@@ -26,23 +26,40 @@ const isSubmitting = ref(false)
 const submitForm = async () => {
   isSubmitting.value = true
 
-  // Simulate API call
-  await new Promise((resolve) => setTimeout(resolve, 1000))
+  try {
+    const response = await fetch('http://localhost:3001/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData.value),
+    })
 
-  toast.success('Message envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.')
+    const data = await response.json()
 
-  // Reset form
-  formData.value = {
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    device: '',
-    issue: '',
-    message: '',
+    if (!response.ok) {
+      throw new Error(data.error || 'Erreur lors de l\'envoi')
+    }
+
+    toast.success('Message envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.')
+
+    // Reset form
+    formData.value = {
+      name: '',
+      email: '',
+      phone: '',
+      subject: '',
+      device: '',
+      issue: '',
+      message: '',
+    }
+
+  } catch (error) {
+    console.error('Erreur:', error)
+    toast.error(error.message || 'Une erreur est survenue, veuillez réessayer')
+  } finally {
+    isSubmitting.value = false
   }
-
-  isSubmitting.value = false
 }
 
 onMounted(() => {
