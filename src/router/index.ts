@@ -48,6 +48,11 @@ const router = createRouter({
       component: () => import('@/pages/Favorites.vue'),
     },
     {
+      path: '/admin-messages',
+      name: 'admin-messages',
+      component: () => import('@/pages/AdminMessages.vue'),
+    },
+    {
       path: '/:pathMatch(.*)*',
       name: 'not-found',
       component: () => import('@/pages/NotFound.vue'),
