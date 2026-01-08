@@ -81,6 +81,7 @@ const navigation = {
       <div class="mt-12 pt-8 border-t border-gray-800">
         <div class="flex flex-col md:flex-row justify-between items-center">
           <p class="text-gray-400 text-sm">{{ currentYear }} Shop. Tous droits réservés.</p>
+          <p class="text-gray-400 text-sm mt-1">Fait avec ❤️ par Zakaria Eddini</p>
           <div class="mt-4 md:mt-0 flex space-x-6">
             <RouterLink
               v-for="item in navigation.legal"
