@@ -12,10 +12,10 @@ defineOptions({
 const toast = useToast()
 const route = useRoute()
 
-// Configuration EmailJS
-const EMAILJS_PUBLIC_KEY = 'r5zqGtPmDUvTF1Yrd'
-const EMAILJS_SERVICE_ID = 'service_mzcs2sb'
-const EMAILJS_TEMPLATE_ID = 'template_acotspj'
+// Configuration EmailJS depuis les variables d'environnement
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'r5zqGtPmDUvTF1Yrd'
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_mzcs2sb'
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_acotspj'
 
 // Initialiser EmailJS
 emailjs.init(EMAILJS_PUBLIC_KEY)
