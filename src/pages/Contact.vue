@@ -3,6 +3,7 @@ import { ref, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { MapPin, Phone, Mail, Clock, Send } from 'lucide-vue-next'
 import { useToast } from '@/composables/useToast'
+import emailjs from '@emailjs/browser'
 
 defineOptions({
   name: 'ContactPage',
@@ -10,6 +11,14 @@ defineOptions({
 
 const toast = useToast()
 const route = useRoute()
+
+// Configuration EmailJS
+const EMAILJS_PUBLIC_KEY = 'r5zqGtPmDUvTF1Yrd'
+const EMAILJS_SERVICE_ID = 'service_mzcs2sb'
+const EMAILJS_TEMPLATE_ID = 'template_acotspj'
+
+// Initialiser EmailJS
+emailjs.init(EMAILJS_PUBLIC_KEY)
 
 const formData = ref({
   name: '',
@@ -27,12 +36,22 @@ const submitForm = async () => {
   isSubmitting.value = true
 
   try {
-    // TODO: Configurer avec le service choisi pour Infomaniak
-    // Options: EmailJS, Formspree, ou backend PHP
-    console.log('Message à envoyer:', formData.value)
+    // Envoyer avec EmailJS
+    const templateParams = {
+      name: formData.value.name,
+      email: formData.value.email,
+      phone: formData.value.phone || 'Non spécifié',
+      subject: formData.value.subject,
+      device: formData.value.device || 'Non spécifié',
+      issue: formData.value.issue || 'Non spécifié',
+      message: formData.value.message,
+    }
 
-    // Simulation d'envoi
-    await new Promise(resolve => setTimeout(resolve, 1000))
+    await emailjs.send(
+      EMAILJS_SERVICE_ID,
+      EMAILJS_TEMPLATE_ID,
+      templateParams
+    )
 
     toast.success('Message envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.')
 
