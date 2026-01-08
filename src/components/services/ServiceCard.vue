@@ -86,7 +86,7 @@ const formatPrice = (price: number | 'Sur devis') => {
           </div>
           <RouterLink
             :to="`/services/${service.slug}`"
-            class="btn-primary px-6 py-3 text-sm font-semibold whitespace-nowrap shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
+            class="btn-primary px-4 py-2.5 text-sm font-semibold whitespace-nowrap shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
           >
             Voir plus
           </RouterLink>
