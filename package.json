@@ -45,5 +45,20 @@
     "vite": "^5.0.10",
     "vitest": "^1.0.4",
     "vue-tsc": "^1.8.25"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Iniddeee/site_vitrine_shop.git"
+  },
+  "keywords": [
+    "vue3",
+    "typescript",
+    "tailwindcss",
+    "vite",
+    "porrentruy",
+    "smartphone",
+    "reparation"
+  ],
+  "author": "Zakaria Eddini",
+  "license": "MIT"
 }
