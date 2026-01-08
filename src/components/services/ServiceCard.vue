@@ -73,7 +73,7 @@ const formatPrice = (price: number | 'Sur devis') => {
 
       <!-- Footer -->
       <div class="mt-auto pt-6 border-t border-gray-200 dark:border-gray-600">
-        <div class="flex items-center justify-between">
+        <div class="flex items-center justify-between gap-4">
           <div>
             <p
               class="text-xs text-gray-500 dark:text-gray-400 mb-1 font-medium uppercase tracking-wide"
@@ -86,7 +86,7 @@ const formatPrice = (price: number | 'Sur devis') => {
           </div>
           <RouterLink
             :to="`/services/${service.slug}`"
-            class="btn-primary px-6 py-3 text-sm font-semibold whitespace-nowrap shadow-lg hover:shadow-xl transition-shadow"
+            class="btn-primary px-6 py-3 text-sm font-semibold whitespace-nowrap shadow-lg hover:shadow-xl transition-shadow flex-shrink-0"
           >
             Voir plus
           </RouterLink>
